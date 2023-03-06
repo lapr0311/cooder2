@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    background-color: whitesmoke;
+  
 }
 
 .container {
@@ -28,6 +28,7 @@
 .main {
     grid-area: main;
     display: grid;
+    justify-content: center;
     grid-template-columns: auto auto auto;
 }
 
@@ -132,4 +133,11 @@ img {
 
 .tituloCarrusel{
     color: gold;
+}
+
+
+
+
+.contacto{
+    justify-content: center;
 }
