@@ -8,7 +8,7 @@
             "footer footer";
         gap: 10px;
 
-        @include moblie {
+        @include mobile {
             display: grid;
             grid-template-areas:
                 "navar navar"
@@ -44,7 +44,7 @@
             width: 100%;
         }
 
-        @include moblie{
+        @include mobile{
             width: 100%;
         }
     }
@@ -55,7 +55,7 @@
         justify-content: center;
         grid-template-columns: auto auto auto;
 
-        @include moblie {
+        @include mobile {
             grid-area: main;
             display: grid;
             grid-template-columns: auto;
