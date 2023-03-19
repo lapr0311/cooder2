@@ -1,0 +1,130 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+*::-moz-selection {
+  background-color: black;
+  color: white;
+}
+*::selection {
+  background-color: black;
+  color: white;
+}
+
+.navar .logo {
+  width: 150px;
+  height: auto;
+}
+.navar .nav-item a:hover {
+  text-decoration: underline;
+}
+
+.sidebar .menu {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .menu .dropdown-item:hover {
+  background-color: rgb(192, 192, 192);
+  cursor: pointer;
+}
+
+.main .producto {
+  border: 1px solid #c6c6c6;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  padding: 5%;
+}
+.main .producto:hover {
+  background-color: rgb(192, 192, 192);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+@media screen and (max-width: 576px) {
+  .main .producto:hover :hover {
+    cursor: pointer;
+    transform: scale(1, 1);
+  }
+}
+.main .producto .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main .producto img {
+  height: auto;
+  width: 100%;
+}
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container .container {
+  display: grid;
+  grid-template-areas: "navar navar" "sidebar main" "footer footer";
+  gap: 10px;
+}
+@media screen and (max-width: 576px) {
+  .container .container {
+    display: grid;
+    grid-template-areas: "navar navar" "sidebar sidebar" "main main" "footer footer";
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container .container {
+    display: grid;
+    grid-template-areas: "navar navar" "sidebar sidebar" "main main" "footer footer";
+    gap: 10px;
+  }
+}
+.container .navar {
+  grid-area: navar;
+}
+.container .sidebar {
+  grid-area: sidebar;
+  width: 180px;
+  padding: 5%;
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container .sidebar {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .sidebar {
+    width: 100%;
+  }
+}
+.container .main {
+  grid-area: main;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+}
+@media screen and (max-width: 576px) {
+  .container .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container .main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+.container .tituloCarrusel {
+  color: gold;
+}
+.container .contacto {
+  justify-content: center;
+}/*# sourceMappingURL=estilos.css.map */

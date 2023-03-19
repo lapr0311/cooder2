@@ -1,0 +1,81 @@
+.container {
+    .container {
+
+        display: grid;
+        grid-template-areas:
+            "navar navar"
+            "sidebar main"
+            "footer footer";
+        gap: 10px;
+
+        @include moblie {
+            display: grid;
+            grid-template-areas:
+                "navar navar"
+                "sidebar sidebar"
+                "main main"
+                "footer footer";
+            gap: 10px;
+            
+        }
+        @include tablet{
+            display: grid;
+        grid-template-areas:
+            "navar navar"
+            "sidebar sidebar"
+            "main main"
+            "footer footer";
+        gap: 10px;
+        }
+    }
+
+    .navar {
+        grid-area: navar;
+
+       
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        width: 180px;
+        padding: 5%;
+
+        @include tablet{
+            width: 100%;
+        }
+
+        @include moblie{
+            width: 100%;
+        }
+    }
+
+    .main {
+        grid-area: main;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: auto auto auto;
+
+        @include moblie {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: auto;
+
+        }
+
+        @include tablet {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+    }
+
+
+
+    .tituloCarrusel {
+        color: $colortitulo;
+    }
+
+    .contacto {
+        justify-content: center;
+    }
+}

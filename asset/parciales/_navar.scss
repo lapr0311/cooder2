@@ -1,0 +1,14 @@
+.navar{
+    .logo {
+        width: 150px;
+        height: auto;
+    }
+
+    .nav-item {
+        a {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

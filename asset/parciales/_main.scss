@@ -1,0 +1,42 @@
+.main {
+    .producto {
+        border: 1px solid $colorborder;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        padding: 5%;
+
+       
+
+        &:hover {
+            background-color: $fondoproducto;
+            cursor: pointer;
+            transform: scale(1.2);
+
+            @include moblie{
+                :hover{
+                    cursor:pointer;
+                    transform:scale(1,1);
+                }
+            }
+
+            
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+    
+        }
+
+    }
+
+  
+}
