@@ -41,12 +41,6 @@
   cursor: pointer;
   transform: scale(1.2);
 }
-@media screen and (max-width: 576px) {
-  .main .producto:hover :hover {
-    cursor: pointer;
-    transform: scale(1, 1);
-  }
-}
 .main .producto .price {
   display: flex;
   flex-direction: column;
