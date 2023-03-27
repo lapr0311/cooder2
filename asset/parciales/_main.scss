@@ -1,4 +1,5 @@
 .main {
+ 
     .producto {
         border: 1px solid $colorborder;
         display: flex;
@@ -7,15 +8,19 @@
         padding: 5%;
 
        
+     &:hover {
+             background-color: $fondoproducto;
+             cursor: pointer;
+             transform: scale(1.2);
 
-        &:hover {
-            background-color: $fondoproducto;
-            cursor: pointer;
-            transform: scale(1.2);
-
-            
-            
-        }
+            @include mobile{
+            transform: none;
+                        }
+                
+             }
+           
+              
+        
 
         .price {
             display: flex;
@@ -30,7 +35,14 @@
     
         }
 
+       .video{
+        justify-content: center;
+       }
+
     }
 
+    
+    
   
 }
+

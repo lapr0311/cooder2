@@ -40,7 +40,15 @@
   background-color: rgb(192, 192, 192);
   cursor: pointer;
   transform: scale(1.2);
+  
 }
+@media screen and (max-width: 576px){
+  .main .producto:hover{
+    transform: none;
+   }
+}
+
+
 .main .producto .price {
   display: flex;
   flex-direction: column;
@@ -70,6 +78,7 @@
     grid-template-areas: "navar navar" "sidebar sidebar" "main main" "footer footer";
     gap: 10px;
   }
+ 
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
   .container .container {
@@ -121,4 +130,4 @@
 }
 .container .contacto {
   justify-content: center;
-}/*# sourceMappingURL=estilos.css.map */
+}

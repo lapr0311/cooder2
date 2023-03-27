@@ -1,14 +1,16 @@
-.sidebar{
-    .menu{
+.sidebar {
+    .menu {
         display: flex;
         flex-direction: column;
-        .dropdown-item{
-            &:hover{
+
+        .dropdown-item {
+            &:hover {
                 background-color: $fondoproducto;
-                cursor:pointer;
+                cursor: pointer;
+
             }
         }
-        
-    }  
+
+    }
 
 }
